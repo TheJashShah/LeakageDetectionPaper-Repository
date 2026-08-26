@@ -39,6 +39,12 @@ All source code is located in the `src/` directory. The scripts are broken down 
 * `sensitivity_ann.py`: Conducts sensitivity analysis and robustness checks on the baseline ANN model.
 * `sensitivity_paann.py`: Conducts sensitivity analysis on the PA-ANN model to evaluate its stability under varying operational conditions.
 
+### 5. Inference time evaluations
+* `inference_physics_residuals.py`: calculates the physics residuals at inference time.
+* `memory_footprint_ann.py` and `memory_footprint_paann.py` for inference time latency, memory, GPU utilization.
+
+### 6. Baselines from literature
+* `lstm_baseline.py` and `gnn_baseline.py`: architecture, training and evaluation of LSTM and GNN from the literature, on 100 scenarios, same protocols and hyper-params as ANN and PA-ANN.
 ---
 
 ## Usage Pipeline
