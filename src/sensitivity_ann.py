@@ -14,7 +14,7 @@ import os
  
 def load_scenario_data(scenario_id):
     WORKDIR = os.path.dirname(CURRENT_PATH)
-    data  = pd.read_csv(os.path.join(WORKDIR, r"leakdb_Hanoi\Full-Dataset", f"Scenario-{scenario_id}.csv"))
+    data  = pd.read_csv(os.path.join(WORKDIR, r"", f"Scenario-{scenario_id}.csv"))
     data = data.drop(columns=['Unnamed: 0'])
     return data
 
@@ -116,16 +116,16 @@ def normalize_df(df, mean, std):
     
 
  
-TEST_SCENARIOS_1 = [3, 5, 11, 30, 49, 61, 64, 71, 77, 78, 80, 89, 93, 108, 109, 122, 123]
-TEST_SCENARIOS_2 = [127, 140, 143, 156, 160, 164, 183, 190, 192, 231, 239, 248, 257, 262, 272 ]  
-TEST_SCENARIOS_3 = [286, 295, 300, 306, 311, 320, 325, 331, 332, 333, 351, 370, 430, 436, 447]  
-TEST_SCENARIOS_4 = [448, 466, 501, 533, 534, 539, 543, 557, 563, 573, 574, 580, 610, 612, 618 ]
-TEST_SCENARIOS_5 = [626, 642, 644, 651, 668, 673, 677, 683, 686, 690, 691, 692, 694, 699, 722 ] 
-TEST_SCENARIOS_6 = [725, 731, 732, 754, 755, 780, 787, 812, 814, 815, 835, 854, 862, 866, 867, 873, 875, 887, 910, 914, 930, 951, 952, 963, 965, 981, 994, 995 ]
+TEST_SCENARIOS_1 = []
+TEST_SCENARIOS_2 = []  
+TEST_SCENARIOS_3 = [] 
+TEST_SCENARIOS_4 = []
+TEST_SCENARIOS_5 = []
+TEST_SCENARIOS_6 = []
 
 CURRENT_PATH = os.path.dirname(os.path.abspath(__file__))
 FILES_PATH = os.path.join(CURRENT_PATH, "files")
-MODEL_PATH = os.path.join(FILES_PATH, r"ann_16_2026_01_13_15_20_21.pth")
+MODEL_PATH = os.path.join(FILES_PATH, r"")
 MEAN_PATH = os.path.join(FILES_PATH, r"mean_ann.txt")
 STD_PATH = os.path.join(FILES_PATH, r"std_ann.txt")
 
