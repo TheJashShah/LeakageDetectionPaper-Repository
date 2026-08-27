@@ -25,7 +25,7 @@ print(f"Using device: {device}")
 current_dir = os.getcwd()
 files_dir = os.path.join(current_dir, "files")
 dataset_dir = os.path.join(current_dir, "..","..", "Hanoi_CMH")
-MODEL_PATH = os.path.join(files_dir, "_ann_last_2026_01_13_12_28_59_physics.pth") 
+MODEL_PATH = os.path.join(files_dir, "") 
 
 
 print(f"Dataset Dir: {dataset_dir}")
