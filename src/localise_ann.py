@@ -24,7 +24,7 @@ print(f"Using device: {device}")
 current_dir = os.getcwd()
 files_dir = os.path.join(current_dir, "files")
 dataset_dir = os.path.join(current_dir, "..","..", "Hanoi_CMH")
-MODEL_PATH = os.path.join(files_dir, "_ann_last_2026_01_13_15_20_21.pth") 
+MODEL_PATH = os.path.join(files_dir, "") 
 
 
 print(f"Dataset Dir: {dataset_dir}")
@@ -444,7 +444,7 @@ import tqdm
 def clean_id(node_id):
     return str(node_id).strip()
 
-TEST_SCENARIOS= [3, 5, 11, 30, 49, 61, 64, 71, 77, 78, 80, 89, 93, 108, 109, 122, 123, 127, 140, 143, 156, 160, 164, 183, 190, 192, 231, 239, 248, 257, 262, 272, 286, 295, 300, 306, 311, 320, 325, 331, 332, 333, 351, 370, 430, 436, 447, 448, 466, 501, 533, 534, 539, 543, 557, 563, 573, 574, 580, 610, 612, 618, 626, 642, 644, 651, 668, 673, 677, 683, 686, 690, 691, 692, 694, 699, 722, 725, 731, 732, 754, 755, 780, 787, 812, 814, 815, 835, 854, 862, 866, 867, 873, 875, 887, 910, 914, 930, 951, 952, 963, 965, 981, 994, 995]
+TEST_SCENARIOS= []
 
 ALL_TP = 0
 ALL_FN = 0
